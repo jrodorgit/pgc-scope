@@ -1,0 +1,2 @@
+# pgc-scope
+scopes - ambitos
