@@ -18,7 +18,7 @@ public class PGCScopeLoaderTest extends TestCase{
 		Collection<ScopeBean> ambitos=null;
 		try {
 			ambitos = scopeLoader.loadActiveScopes("ALL","001" , null);
-			System.out.println("Numero de valores del ambito:"+ambitos.toString());
+			System.out.println("Valores del ambito:"+ambitos.toString());
 		} catch (SQLException | ScopesException e) {
 			e.printStackTrace();
 		}

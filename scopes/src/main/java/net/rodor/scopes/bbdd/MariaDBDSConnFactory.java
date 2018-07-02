@@ -25,9 +25,6 @@ public class MariaDBDSConnFactory {
 	    Connection conn = null;
 	    try {
 	      Context initialContext = new InitialContext();
-	      if ( initialContext == null){
-	        System.out.println("JNDI problem. Cannot get InitialContext.");
-	      }
 	      DataSource datasource = (DataSource)initialContext.lookup(DATASOURCE_CONTEXT);
 	      if (datasource != null) {
 	        conn = datasource.getConnection();
